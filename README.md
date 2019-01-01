@@ -14,7 +14,7 @@
 
 
 ### Enter InvoiceMe
-InvoiceMe is essentially a python lambda function that combines the static data on the invoice (a mix of config files and state in a dynamodb table) with the dynamic content from Harvest to produce the invoice. The lambda builds a json payload for the invoice and makes use of [invoiced](https://invoice-generator.com/#/1) to generate the PDF. This is then uploaded to S3 and a slack notification with a signed URL to the file is sent to the user. The app uses the following AWS services:
+InvoiceMe is a python lambda function that combines static invoice data (a mix of config files and state in a dynamodb table) with the dynamic timesheet content from Harvest to produce an invoice. The lambda builds a json payload for the invoice and makes use of [invoiced](https://invoice-generator.com/#/1) to generate the PDF. This is then uploaded to S3 and a slack notification with a signed URL to the file is sent to the user. The app uses the following AWS services:
 * Lambda - for running serverless functions
 * DynamoDB - for keeping a tiny bit of state used to generate invoices
 * Cloudwatch - for scheduling the lambda to run automatically
