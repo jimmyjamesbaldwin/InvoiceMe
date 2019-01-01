@@ -1,0 +1,9 @@
+{
+  "day_rate": 123,
+  "from": "My Awesome Company",
+  "to": "123 Fake Street\nSomewhere,\nLondon,\nSW1A 2AA\n0234 567 8910",
+  "currency": "GBP",
+  "tax_title": "VAT",
+  "tax": 20,
+  "notes": "Money transfers should be sent to:\nBank: Awesome Bank\nAccount: 00000000\nSort Code: 00-00-00\n\nPayment should be made within 30 days."
+}
